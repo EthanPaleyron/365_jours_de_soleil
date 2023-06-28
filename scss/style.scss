@@ -59,15 +59,18 @@ header {
 // MAIN
 main {
     margin: 5vh 5%;
+
+    // previsions_aside
     .content_previsions_aside {
+        display: flex;
             
         section {
             .title_previsions {
                 margin-bottom: 2rem;
                 font-size: 1.8rem;
             }
-
             .content_article {
+                width: 33rem;
                 display: flex;
                 align-items: center;
                 flex-wrap: wrap;
@@ -85,11 +88,9 @@ main {
                         display: flex;
                         flex-direction: column;
                     }
-
                     img {
                         width: 4rem;
                     }
-
                     p {
                         font-size: 1.3rem;
                         font-weight: 700;
@@ -97,13 +98,94 @@ main {
                         .higher_temperature {
                             color: $red-txt;
                         }
-
                         .lower_temperature {
                             color: $blue-txt;
                         }
+                        .degree_celsius:after {
+                            content: "°";
+                            margin-left: 2px;
+                        } 
                     }
                 }
            }
+        }
+        aside {
+            text-transform: uppercase;
+            width: 20rem;
+            background-color: $w-txt-bg;
+            border-radius: 1rem;
+            box-shadow: $shadow;
+            padding: 2.5rem 0.8rem;
+
+            ul {
+                li {
+                    margin-bottom: 1rem;
+                    width: 100%;
+                    border-radius: 0.5rem;
+                    padding: 0.2rem 0.5rem;
+                    display: flex;
+                    align-items: center;
+
+                    a {
+                        font-weight: 700;
+                        font-size: 1.3rem;
+                    }
+                    img {
+                        margin-right: 1rem;
+                        width: 1rem;
+                    }
+                }
+                li:hover {
+                    background-color: $blue-l-bg;
+                }
+            }
+        }
+    }
+    .content_img_abonnement {
+        margin-top: 10vh;
+        display: flex;
+        justify-content: space-between;
+
+        div {
+            width: 80rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem 1.5rem;
+
+            img {
+                width: 12rem;
+                box-shadow: $shadow;
+            }
+        }
+
+        form {
+            color: $blue-txt;
+            background-color: $w-txt-bg;
+            border-radius: 1rem;
+            box-shadow: $shadow;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+
+            h2 {
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 1.4rem;
+            }
+
+            %input {
+                width: 100%;
+                border: none;
+                border-radius: 0.5rem;
+                box-shadow: $shadow;
+                padding: 0.5rem;
+            }
+
+            .email {
+                background-color: $w;
+            }
         }
     }
 }

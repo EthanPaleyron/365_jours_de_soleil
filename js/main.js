@@ -65,7 +65,7 @@ for (let article of newPrevisions) {
         <h2>${article.days} <span>${article.number}</span></h2>
         <img src="${article.sky}" alt="prévisions météo">
         <p>
-            <span class="higher_temperature">${article.higherTemp}°</span> | <span class="lower_temperature">${article.lowerTemp}°</span></p>
+            <span class="higher_temperature degree_celsius">${article.higherTemp}</span> | <span class="lower_temperature degree_celsius">${article.lowerTemp}</span></p>
     </article>
     `
 }
