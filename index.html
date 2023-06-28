@@ -1,16 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <link rel="stylesheet" href="/scss/_link.scss">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Name</title>
+  <script src="https://kit.fontawesome.com/2621df78fc.js" crossorigin="anonymous"></script>
+
+  <title>365 Jours de Soleil</title>
 </head>
 
 <body>
 
-  <h1>Hello World</h1>
+
+  <!-- HEADER -->
+  <header>
+    <div class="content_logo_title">
+      <a href="https://www.lachainemeteo.com/meteo-france/previsions-meteo-france-aujourdhui" target="_blank">
+        <img src="/public/logo.svg" alt="logo 365 Jours de Soleil">
+      </a>
+      <h1>365 Jours de Soleil</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#">
+            <i class="fa-solid fa-cloud-sun"></i>
+            <span>prévisions</span>
+          </a></li>
+        <li><a href="#">
+            <i class="fa-solid fa-water"></i>
+            <span>mer</span>
+          </a></li>
+        <li><a href="#">
+            <i class="fa-solid fa-mountain"></i>
+            <span>montagne</span>
+          </a></li>
+        <li><a href="#">
+            <i class="fa-solid fa-earth-europe"></i>
+            <span>climat</span>
+          </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- séparateur parallaxe -->
+    <hr>
+    <!-- previsions aside -->
+    <div class="content_previsions_aside">
+      <section>
+        <h2 class="title_previsions">Prévisions à <span class="eight">8</span><span class="ten">10</span> jours</h2>
+        <div class="content_article" id="articlePrevisions"></div>
+      </section>
+
+      <aside>
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-triangle-exclamation"></i>vigilance</a></li>
+          <li><a href="#"><i class="fa-solid fa-earth-asia"></i>outre-mer</a></li>
+          <li><a href="#"><i class="fa-solid fa-earth-americas"></i>climat</a></li>
+          <li><a href="#"><i class="fa-solid fa-mountain-sun"></i>montagne</a></li>
+          <li><a href="#"><i class="fa-solid fa-water"></i>mer</a></li>
+          <li><a href="#"><i class="fa-solid fa-umbrella-beach"></i>pales</a></li>
+          <li><a href="#"><i class="fa-solid fa-earth-africa"></i>animations</a></li>
+          <li><a href="#"><i class="fa-solid fa-database"></i>open data</a></li>
+          <li><a href="#"><i class="fa-solid fa-user-plus"></i>services</a></li>
+          <li><a href="#"><i class="fa-solid fa-mobile"></i>mobile</a></li>
+          <li><a href="#"><i class="fa-solid fa-circle-user"></i>premium</a></li>
+        </ul>
+      </aside>
+    </div>
+
+    <!-- tableau ephéméride -->
+    <div class="p_table_ephéméride">
+      <section class="content_table">
+        <h2>Les relevés du jour</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Ville</th>
+              <th>Météo</th>
+              <th>Min</th>
+              <th>Max</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Londres</td>
+              <td>Pluvieux</td>
+              <td class="td_blue">9°</td>
+              <td class="td_red">11°</td>
+            </tr>
+            <tr>
+              <td>Madrid</td>
+              <td>Voilé</td>
+              <td class="td_blue">13°</td>
+              <td class="td_red">20°</td>
+            </tr>
+            <tr>
+              <td>Berlin</td>
+              <td>Nuageux</td>
+              <td class="td_blue">8°</td>
+              <td class="td_red">11°</td>
+            </tr>
+            <tr>
+              <td>Lisbonne</td>
+              <td>Ensoleillé</td>
+              <td class="td_blue">13°</td>
+              <td class="td_red">21°</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <img src="public/ephemeride.png" alt="ephéméride">
+    </div>
+
+    <!-- images abonnement -->
+    <div class="content_img_abonnement">
+      <div>
+        <img src="public/route_neige.gif" alt="images">
+        <img src="public/route_ete.jpg" alt="images">
+        <img src="public/printemps.jpg" alt="images">
+        <img src="public/nuageux.jpg" alt="images">
+        <img src="public/Climadiag.jpg" alt="images">
+        <img src="public/certif-intemperies.png" alt="images">
+      </div>
+
+      <form>
+        <h2>abonnez-vous !</h2>
+        <p>recevez chaque jour les
+          prévisions de votre ville</p>
+        <label for="email">
+          <input class="email" type="email" name="email" id="email" placeholder="Votre adresse email" required>
+        </label>
+        <input class="submit" type="submit" value="s’abonner">
+      </form>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <h2>that’s all folks, nearly finished</h2>
+  </footer>
 
   <script type="module" src="/js/main.js"></script>
 </body>
