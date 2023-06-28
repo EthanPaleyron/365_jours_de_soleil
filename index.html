@@ -24,20 +24,34 @@
 
     <nav>
       <ul>
-        <li><a href="#"><i class="fa-solid fa-cloud-sun"></i></a></li>
-        <li><a href="#"><i class="fa-solid fa-water"></i></a></li>
-        <li><a href="#"><i class="fa-solid fa-mountain"></i></a></li>
-        <li><a href="#"><i class="fa-solid fa-earth-europe"></i></a></li>
+        <li><a href="#">
+            <i class="fa-solid fa-cloud-sun"></i>
+            <span>prévisions</span>
+          </a></li>
+        <li><a href="#">
+            <i class="fa-solid fa-water"></i>
+            <span>mer</span>
+          </a></li>
+        <li><a href="#">
+            <i class="fa-solid fa-mountain"></i>
+            <span>montagne</span>
+          </a></li>
+        <li><a href="#">
+            <i class="fa-solid fa-earth-europe"></i>
+            <span>climat</span>
+          </a></li>
       </ul>
     </nav>
   </header>
 
   <!-- MAIN -->
   <main>
-    <!-- previsions_aside -->
+    <!-- séparateur parallaxe -->
+    <hr>
+    <!-- previsions aside -->
     <div class="content_previsions_aside">
       <section>
-        <h2 class="title_previsions">prévisions a <span>8</span> jours</h2>
+        <h2 class="title_previsions">prévisions a <span class="eight">8</span><span class="ten">10</span> jours</h2>
         <div class="content_article" id="articlePrevisions"></div>
       </section>
 
@@ -58,7 +72,44 @@
       </aside>
     </div>
 
-    <!--  -->
+    <!-- tableau ephéméride -->
+    <div class="p_table_ephéméride">
+      <section class="content_table">
+        <h2>Les relevés du jour</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>aaa</th>
+              <th>aaa</th>
+              <th>aaa</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>aaa</td>
+              <td>aaa</td>
+              <td>aaa</td>
+              <td>aaa</td>
+            </tr>
+            <tr>
+              <td>aaa</td>
+              <td>aaa</td>
+              <td>aaa</td>
+              <td>aaa</td>
+            </tr>
+            <tr>
+              <td>aaa</td>
+              <td>aaa</td>
+              <td>aaa</td>
+              <td>aaa</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <img src="public/ephemeride.png" alt="ephéméride">
+    </div>
+
+    <!-- images abonnement -->
     <div class="content_img_abonnement">
       <div>
         <img src="public/route_neige.gif" alt="images">
@@ -76,12 +127,15 @@
         <label for="email">
           <input class="email" type="email" name="email" id="email" placeholder="Votre adresse email">
         </label>
-        <input type="submit" value="s’abonner">
+        <input class="submit" type="submit" value="s’abonner">
       </form>
     </div>
   </main>
 
   <!-- FOOTER -->
+  <footer>
+    <h2>that’s all folks, nearly finished</h2>
+  </footer>
 
   <script type="module" src="/js/main.js"></script>
 </body>
