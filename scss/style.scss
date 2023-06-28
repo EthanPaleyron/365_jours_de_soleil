@@ -66,7 +66,7 @@ main {
     hr {
         display: none;
         margin-bottom: 10vh;
-        height: 30rem;
+        height: 50rem;
         background: url("../public/beach-1852945_1920.jpg") no-repeat center fixed;
         border: none;
         border-radius: 1rem;
@@ -97,7 +97,7 @@ main {
                 flex-wrap: wrap;
                 gap: 1rem;
 
-                article {
+                .previsions {
                     text-transform: uppercase;
                     text-align: center;
                     width: fit-content;
@@ -155,9 +155,8 @@ main {
                         font-weight: 700;
                         font-size: 1.3rem;
                     }
-                    img {
+                    i {
                         margin-right: 1rem;
-                        width: 1rem;
                     }
                 }
                 li:hover {
@@ -170,9 +169,11 @@ main {
     .p_table_ephéméride {
         display: none;
         margin: 10vh 0;
+        height: 13rem;
         justify-content: space-between;
 
         .content_table {
+            width: 25%;
             height: 100%;
             background-color: $w-txt-bg;
             border-radius: 0.5rem;
@@ -180,38 +181,56 @@ main {
             padding: 2rem 1rem;
             
             h2 {
+                margin-bottom: 1rem;
                 text-align: center;
                 color: $blue-txt-bg;
             }
 
             table {
+                font-weight: 700;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
 
-                thead, tbody {
+                thead {
                     display: flex;
                     flex-direction: column;
+                    
                     tr {
-                        width: 100%;
                         border-bottom: 1px solid $b;
-                        margin-right: 1rem;
+                        display: flex;
+
+                        th {
+                            font-size: 1.3rem;
+                            width: 33%;
+                        }
                     }
                 }
 
-                tr {
-                    border-bottom: 1px solid $b;
+                tbody {
                     display: flex;
-                    gap: 2rem;
+                    flex-direction: column;
+
+                    tr {
+                        border-bottom: 1px solid $b;
+                        display: flex;
+                    }
                     td {
-                        color: red;
+                        margin-right: 2rem;
+                        width: 50%;
+                    }
+                    .td_red {
+                        color: $red-txt;
+                    }
+                    .td_blue {
+                        color: $blue-txt;
                     }
                 }
             }
         }
 
         img {
-            width: 50rem;
+            width: 65%;
             height: 100%;
             border-radius: 0.5rem;
             box-shadow: $shadow;
@@ -225,7 +244,7 @@ main {
         justify-content: space-between;
 
         div {
-            width: 40rem;
+            width: 70%;
             display: flex;
             flex-wrap: wrap;
             gap: 1rem 1.5rem;
@@ -235,11 +254,12 @@ main {
                 box-shadow: $shadow;
             }
         }
-
+        
         form {
             color: $blue-txt;
             text-align: center;
             font-weight: 700;
+            width: 30%;
             background-color: $w-txt-bg;
             border-radius: 1rem;
             box-shadow: $shadow;
@@ -247,7 +267,7 @@ main {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 1rem;
+            gap: 1rem 0;
 
             h2 {
                 text-transform: uppercase;
@@ -291,7 +311,7 @@ footer {
 }
 
 // MODE DESTOPE
-@media screen and ((min-width: 1400px)) {
+@media screen and ((min-width: 1200px)) {
     hr {
         display: block !important;
     }
@@ -305,12 +325,7 @@ footer {
     .over_eight {
         display: block !important;
     }
-
-    .content_article {
-        article {
-            padding: 0.7rem 1rem;
-        }
-    }
+    
     aside {
         ul {
             li {
@@ -330,5 +345,11 @@ footer {
 
     .p_table_ephéméride {
         display: flex !important;
+    }
+
+    .content_img_abonnement {
+        form {
+            width: 50%;
+        }
     }
 }

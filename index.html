@@ -51,23 +51,23 @@
     <!-- previsions aside -->
     <div class="content_previsions_aside">
       <section>
-        <h2 class="title_previsions">prévisions a <span class="eight">8</span><span class="ten">10</span> jours</h2>
+        <h2 class="title_previsions">Prévisions à <span class="eight">8</span><span class="ten">10</span> jours</h2>
         <div class="content_article" id="articlePrevisions"></div>
       </section>
 
       <aside>
         <ul>
-          <li><img src="public/aside/circle-user-solid.svg" alt="link aside"><a href="#">vigilance</a></li>
-          <li><img src="public/aside/circle-user-solid.svg" alt="link aside"><a href="#">outre-mer</a></li>
-          <li><img src="public/aside/circle-user-solid.svg" alt="link aside"><a href="#">climat</a></li>
-          <li><img src="public/aside/circle-user-solid.svg" alt="link aside"><a href="#">montagne</a></li>
-          <li><img src="public/aside/circle-user-solid.svg" alt="link aside"><a href="#">mer</a></li>
-          <li><img src="public/aside/circle-user-solid.svg" alt="link aside"><a href="#">pales</a></li>
-          <li><img src="public/aside/circle-user-solid.svg" alt="link aside"><a href="#">animations</a></li>
-          <li><img src="public/aside/circle-user-solid.svg" alt="link aside"><a href="#">open data</a></li>
-          <li><img src="public/aside/circle-user-solid.svg" alt="link aside"><a href="#">services</a></li>
-          <li><img src="public/aside/circle-user-solid.svg" alt="link aside"><a href="#">mobile</a></li>
-          <li><img src="public/aside/circle-user-solid.svg" alt="link aside"><a href="#">premium</a></li>
+          <li><a href="#"><i class="fa-solid fa-triangle-exclamation"></i>vigilance</a></li>
+          <li><a href="#"><i class="fa-solid fa-earth-asia"></i>outre-mer</a></li>
+          <li><a href="#"><i class="fa-solid fa-earth-americas"></i>climat</a></li>
+          <li><a href="#"><i class="fa-solid fa-mountain-sun"></i>montagne</a></li>
+          <li><a href="#"><i class="fa-solid fa-water"></i>mer</a></li>
+          <li><a href="#"><i class="fa-solid fa-umbrella-beach"></i>pales</a></li>
+          <li><a href="#"><i class="fa-solid fa-earth-africa"></i>animations</a></li>
+          <li><a href="#"><i class="fa-solid fa-database"></i>open data</a></li>
+          <li><a href="#"><i class="fa-solid fa-user-plus"></i>services</a></li>
+          <li><a href="#"><i class="fa-solid fa-mobile"></i>mobile</a></li>
+          <li><a href="#"><i class="fa-solid fa-circle-user"></i>premium</a></li>
         </ul>
       </aside>
     </div>
@@ -79,29 +79,36 @@
         <table>
           <thead>
             <tr>
-              <th>aaa</th>
-              <th>aaa</th>
-              <th>aaa</th>
+              <th>Ville</th>
+              <th>Météo</th>
+              <th>Min</th>
+              <th>Max</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>aaa</td>
-              <td>aaa</td>
-              <td>aaa</td>
-              <td>aaa</td>
+              <td>Londres</td>
+              <td>Pluvieux</td>
+              <td class="td_blue">9°</td>
+              <td class="td_red">11°</td>
             </tr>
             <tr>
-              <td>aaa</td>
-              <td>aaa</td>
-              <td>aaa</td>
-              <td>aaa</td>
+              <td>Madrid</td>
+              <td>Voilé</td>
+              <td class="td_blue">13°</td>
+              <td class="td_red">20°</td>
             </tr>
             <tr>
-              <td>aaa</td>
-              <td>aaa</td>
-              <td>aaa</td>
-              <td>aaa</td>
+              <td>Berlin</td>
+              <td>Nuageux</td>
+              <td class="td_blue">8°</td>
+              <td class="td_red">11°</td>
+            </tr>
+            <tr>
+              <td>Lisbonne</td>
+              <td>Ensoleillé</td>
+              <td class="td_blue">13°</td>
+              <td class="td_red">21°</td>
             </tr>
           </tbody>
         </table>
@@ -113,11 +120,11 @@
     <div class="content_img_abonnement">
       <div>
         <img src="public/route_neige.gif" alt="images">
-        <img src="public/route_neige.gif" alt="images">
-        <img src="public/route_neige.gif" alt="images">
-        <img src="public/route_neige.gif" alt="images">
-        <img src="public/route_neige.gif" alt="images">
-        <img src="public/route_neige.gif" alt="images">
+        <img src="public/route_ete.jpg" alt="images">
+        <img src="public/printemps.jpg" alt="images">
+        <img src="public/nuageux.jpg" alt="images">
+        <img src="public/Climadiag.jpg" alt="images">
+        <img src="public/certif-intemperies.png" alt="images">
       </div>
 
       <form>
@@ -125,7 +132,7 @@
         <p>recevez chaque jour les
           prévisions de votre ville</p>
         <label for="email">
-          <input class="email" type="email" name="email" id="email" placeholder="Votre adresse email">
+          <input class="email" type="email" name="email" id="email" placeholder="Votre adresse email" required>
         </label>
         <input class="submit" type="submit" value="s’abonner">
       </form>
